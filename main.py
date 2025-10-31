@@ -1,4 +1,4 @@
- from google.colab import drive
+
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
@@ -10,8 +10,7 @@ from sklearn.metrics import classification_report
 from sklearn.ensemble import RandomForestClassifier
 from xgboost import XGBClassifier
 
-drive.mount('/content/drive')
-file_path = '/content/drive/MyDrive/order.csv'
+file_path = 'order.csv'
 
 df = pd.read_csv(file_path)
 
